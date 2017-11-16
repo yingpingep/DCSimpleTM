@@ -1,0 +1,10 @@
+C:\Users\yinnping\workspace\DCSimpleTM\bin\Debug\netcoreapp2.0\DC_TuringMachine.deps.json
+C:\Users\yinnping\workspace\DCSimpleTM\bin\Debug\netcoreapp2.0\DC_TuringMachine.runtimeconfig.json
+C:\Users\yinnping\workspace\DCSimpleTM\bin\Debug\netcoreapp2.0\DC_TuringMachine.runtimeconfig.dev.json
+C:\Users\yinnping\workspace\DCSimpleTM\bin\Debug\netcoreapp2.0\DC_TuringMachine.dll
+C:\Users\yinnping\workspace\DCSimpleTM\bin\Debug\netcoreapp2.0\DC_TuringMachine.pdb
+C:\Users\yinnping\workspace\DCSimpleTM\obj\Debug\netcoreapp2.0\DC_TuringMachine.csproj.CoreCompileInputs.cache
+C:\Users\yinnping\workspace\DCSimpleTM\obj\Debug\netcoreapp2.0\DC_TuringMachine.AssemblyInfoInputs.cache
+C:\Users\yinnping\workspace\DCSimpleTM\obj\Debug\netcoreapp2.0\DC_TuringMachine.AssemblyInfo.cs
+C:\Users\yinnping\workspace\DCSimpleTM\obj\Debug\netcoreapp2.0\DC_TuringMachine.dll
+C:\Users\yinnping\workspace\DCSimpleTM\obj\Debug\netcoreapp2.0\DC_TuringMachine.pdb

@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\yinnping\\workspace\\DC_TurningMachine\\DC_TurningMachine.csproj",
-      "projectName": "DC_TurningMachine",
-      "projectPath": "C:\\Users\\yinnping\\workspace\\DC_TurningMachine\\DC_TurningMachine.csproj",
+      "projectUniqueName": "C:\\Users\\yinnping\\workspace\\DCSimpleTM\\DC_TuringMachine.csproj",
+      "projectName": "DC_TuringMachine",
+      "projectPath": "C:\\Users\\yinnping\\workspace\\DCSimpleTM\\DC_TuringMachine.csproj",
       "packagesPath": "C:\\Users\\yinnping\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yinnping\\workspace\\DC_TurningMachine\\obj\\",
+      "outputPath": "C:\\Users\\yinnping\\workspace\\DCSimpleTM\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
