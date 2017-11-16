@@ -21,9 +21,8 @@ namespace DC_TurningMachine
             // Console.SetCursorMove(Console.CursorLeft + 1, Console.CursorTop); 
 
             Console.Write("Please enter an string made by '0' or '1': ");
-            string userInput = Console.ReadLine();            
-            Console.WriteLine(userInput);                        
-            string initStatus = "0";                    
+            string userInput = Console.ReadLine();               
+            string initStatus = "0";            
 
             AddTransition add = new AddTransition();
             add.ReadTheLine(userInput.ToCharArray(), initStatus, 0, add.AddTRs);
@@ -41,12 +40,16 @@ namespace DC_TurningMachine
                 foreach (var item in list)
                 {
                     if (string.Equals(status, item.CurrentStatus) && input[curPosition] == item.CurrentInput)
-                    {                        
-                        Console.WriteLine($"{curPosition}, {status}, {input[curPosition]}");
+                    {  
+                        Console.WriteLine($"\nCurrent position: {curPosition},\tCurrent status: {status},\tRead input: {input[curPosition]}");
+                        Console.WriteLine($"Direction: {item.Direction},\tNext Status: {item.AfterStatus},\tChange input from {input[curPosition]} to {item.ChangeTo}");
+
                         status = item.AfterStatus;
                         input[curPosition] = item.ChangeTo;
 
-                        Console.SetCursorPosition(0, Console.CursorTop);
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        Console.Write("Tape: ");
+                        Console.ResetColor();
                         Console.WriteLine(input);
 
                         switch (item.Direction)
@@ -61,8 +64,7 @@ namespace DC_TurningMachine
                                 break;
                             case 'S':
                                 direction = 'S';                                
-                                Console.WriteLine();
-                                Console.WriteLine("END");
+                                Console.WriteLine();                                
                                 break;
                             default:
                                 break;
@@ -71,6 +73,7 @@ namespace DC_TurningMachine
                     }
                 }                
             }
+            Console.WriteLine("DONE.");
         }
     }
     
