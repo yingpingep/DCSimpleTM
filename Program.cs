@@ -44,13 +44,28 @@ namespace DC_TurningMachine
                         Console.WriteLine($"\nCurrent position: {curPosition},\tCurrent status: {status},\tRead input: {input[curPosition]}");
                         Console.WriteLine($"Direction: {item.Direction},\tNext Status: {item.AfterStatus},\tChange input from {input[curPosition]} to {item.ChangeTo}");
 
+                        Console.Write("OLD: ");
+                        int left = Console.CursorLeft + curPosition;
+                        Console.Write(input);         
+
+                        Console.SetCursorPosition(left, Console.CursorTop);
+                        Console.BackgroundColor = ConsoleColor.DarkCyan;
+                        Console.Write(input[curPosition]);     
+                        Console.ResetColor();                        
+                        Console.WriteLine();
+
                         status = item.AfterStatus;
-                        input[curPosition] = item.ChangeTo;
+                        input[curPosition] = item.ChangeTo;                        
 
                         Console.ForegroundColor = ConsoleColor.Cyan;
-                        Console.Write("Tape: ");
+                        Console.Write("NEW: ");
                         Console.ResetColor();
-                        Console.WriteLine(input);
+                        Console.Write(input);
+                        Console.SetCursorPosition(left, Console.CursorTop);
+                        Console.BackgroundColor = ConsoleColor.DarkCyan;
+                        Console.Write(input[curPosition]);     
+                        Console.ResetColor();                        
+                        Console.WriteLine();
 
                         switch (item.Direction)
                         {
@@ -60,7 +75,7 @@ namespace DC_TurningMachine
                             case 'L':
                                 curPosition -= 1;
                                 break;
-                            case 'E':
+                            case 'E':   
                                 break;
                             case 'S':
                                 direction = 'S';                                
